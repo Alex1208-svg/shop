@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cart</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h1>Your Cart</h1>
+   <table>
+      <thead>
+         <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Actions</th>
+         </tr>
+      </thead>
+      <tbody id="cart-items"></tbody>
+   </table>
+   <h3>Total Price: $<span id="total-price">0</span></h3>
+   <a href="/">Continue Shopping</a>
+
+   <script src="js/cart.js"></script>
+   <script>
+      renderCart(); // Render cart items when the page loads
+   </script>
+</body>
+</html>
